@@ -1,41 +1,54 @@
-# Backend Dependencies for Breast Cancer Detection System
+# # Backend Dependencies for Breast Cancer Detection System
 
-# Web Framework
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-python-multipart==0.0.6
+# # Web Framework
+# fastapi==0.109.0
+# uvicorn[standard]==0.27.0
+# python-multipart==0.0.6
 
-# Deep Learning
-tensorflow==2.15.0
-# Keras is included with TensorFlow 2.16.1
-# keras==2.20.0
+# # Deep Learning
+# tensorflow==2.15.0
+# # Keras is included with TensorFlow 2.16.1
+# # keras==2.20.0
 
-# Computer Vision
-opencv-python==4.9.0.80
-Pillow==10.1.0
+# # Computer Vision
+# opencv-python==4.9.0.80
+# Pillow==10.1.0
 
-# Data Processing
-numpy==1.24.3
-pandas==2.1.4
+# # Data Processing
+# numpy==1.24.3
+# pandas==2.1.4
 
-# Scientific Computing
-scikit-learn==1.4.0
-scipy==1.11.4
+# # Scientific Computing
+# scikit-learn==1.4.0
+# scipy==1.11.4
 
-# Visualization
-matplotlib==3.8.2
-seaborn==0.13.1
+# # Visualization
+# matplotlib==3.8.2
+# seaborn==0.13.1
 
-# Utilities
-pydantic==2.5.3
-python-dotenv==1.0.0
+# # Utilities
+# pydantic==2.5.3
+# python-dotenv==1.0.0
 
-# AWS Integration (for model storage)
-boto3==1.34.34
+# # AWS Integration (for model storage)
+# boto3==1.34.34
 
-# Monitoring & Logging
-loguru==0.7.2
+# # Monitoring & Logging
+# loguru==0.7.2
 
-# CORS & Security
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
+# # CORS & Security
+# python-jose[cryptography]==3.3.0
+# passlib[bcrypt]==1.7.4
+
+
+
+tensorflow-cpu==2.15.0 ; python_version < "3.12"
+numpy<2.0
+pandas
+opencv-python-headless
+scikit-learn
+matplotlib
+fastapi
+uvicorn
+python-multipart
+pillow
