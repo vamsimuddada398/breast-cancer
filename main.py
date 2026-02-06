@@ -17,6 +17,15 @@ import base64
 from datetime import datetime
 import logging
 
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"status": "Render deployment working 🚀"}
+
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

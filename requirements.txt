@@ -6,7 +6,7 @@ uvicorn[standard]==0.27.0
 python-multipart==0.0.6
 
 # Deep Learning
-tensorflow==2.16.1
+tensorflow==2.15.0
 # Keras is included with TensorFlow 2.16.1
 # keras==2.20.0
 
